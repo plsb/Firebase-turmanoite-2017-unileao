@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1032045284475",
+    "firebase_url": "https://projeto-581c9.firebaseio.com",
+    "project_id": "projeto-581c9",
+    "storage_bucket": "projeto-581c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032045284475:android:4a3fe73edd2bf10f",
+        "android_client_info": {
+          "package_name": "br.edu.unileao.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032045284475-ermpa90rcaldtr75vedq2tgqrfeomb4p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.unileao.firebase",
+            "certificate_hash": "6ef66f901645b6c9d07b0b2d9bea96af538a3936"
+          }
+        },
+        {
+          "client_id": "1032045284475-nv1oottuqbv534b1suq3pg458n27mni7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc2K7Gcftdot9XVXuKpn4BrGXWk0d_5XU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032045284475-nv1oottuqbv534b1suq3pg458n27mni7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
