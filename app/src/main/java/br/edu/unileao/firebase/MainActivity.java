@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
                                                         getInstance().getReference();
     private DatabaseReference clientesReference = databaseReference.child("clientes");
     private EditText edtNome, edtEndereco, edtCPF;
-    private Button btSalvar;
+    private Button btSalvar, btExcluir;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         edtEndereco = (EditText) findViewById(R.id.edtEnd);
         edtCPF = (EditText) findViewById(R.id.edtCpf);
         btSalvar = (Button) findViewById(R.id.btSalvar);
+        btExcluir = (Button) findViewById(R.id.btExcluir);
 
         btSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,19 +49,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        clientesReference.addValueEventListener(new ValueEventListener() {
+        btExcluir.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Toast.makeText(MainActivity.this, "Houve alteração",
-                        Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
+            public void onClick(View v) {
+                clientesReference.child(edtCPF.getText().toString())
+                        .removeValue();
             }
         });
-
 
     }
 }

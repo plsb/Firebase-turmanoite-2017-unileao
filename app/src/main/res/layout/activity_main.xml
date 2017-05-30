@@ -35,5 +35,10 @@
         android:layout_height="wrap_content"
         android:text="Salvar"
         android:id="@+id/btSalvar"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:id="@+id/btExcluir"/>
 
 </LinearLayout>
